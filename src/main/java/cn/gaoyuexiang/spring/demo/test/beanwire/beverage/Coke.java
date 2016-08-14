@@ -1,8 +1,6 @@
 package cn.gaoyuexiang.spring.demo.test.beanwire.beverage;
 
-public class Coke {
-	private String name;
-	private String taste;
+public class Coke extends Beverage{
 
 	@Override
 	public String toString() {
