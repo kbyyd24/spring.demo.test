@@ -1,5 +1,8 @@
 package cn.gaoyuexiang.spring.demo.test.beanwire.beverage;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Coke extends Beverage{
 
 	@Override
