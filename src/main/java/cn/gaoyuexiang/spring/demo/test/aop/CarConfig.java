@@ -6,8 +6,10 @@ import cn.gaoyuexiang.spring.demo.test.aop.driver.license.License;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
+@EnableAspectJAutoProxy
 @ComponentScan
 public class CarConfig {
 	public static void main(String[] args) {
