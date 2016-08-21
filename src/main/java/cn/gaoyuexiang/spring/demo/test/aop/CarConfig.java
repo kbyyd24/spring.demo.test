@@ -17,7 +17,8 @@ public class CarConfig {
 						new AnnotationConfigApplicationContext(CarConfig.class);
 		System.out.println("-------------Spring context loaded-------------");
 		Ferrari ferrari = context.getBean(Ferrari.class);
-		Driver driver = new Driver(new License("s3j3"));
+		Driver driver = context.getBean(Driver.class);
+		driver.setLicense(new License("d23a"));
 		int time = driver.drive(ferrari, 1000);
 		System.out.println("spent " + time + " hours");
 		System.out.println("-------------Spring context is going to close-----------");
